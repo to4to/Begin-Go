@@ -326,3 +326,44 @@ var pl=fmt.Println;
 
 
 //Slices
+
+
+// func main(){
+// //general syntax: var name []datatype
+
+// sl1:=make([]string,6)
+// sl1[0]="Society "
+// sl1[1]="Of "
+// sl1[2]="the "
+// sl1[3]="Simulated "
+// sl1[4]="Universe "
+
+// pl("Slice size :",len(sl1))
+
+// for i:=0;i<len(sl1);i++{
+
+// pl(sl1[i])
+
+// }
+
+
+// for _,v :=range sl1{
+
+// 	pl(v)
+// }
+
+
+
+// sArr:=[]int{1,2,3,4,5}
+// sl3:=sArr[0:2]
+// pl("First 3 ",sArr[:3])
+// pl("Last Three ",sArr[2:])
+// sArr[0]=10
+// pl("sl3 ",sl3)
+
+
+// sl3 = append(sl3, 12)
+// pl("sl3 ",sl3)
+// pl("sArr ",sArr)
+
+// }
