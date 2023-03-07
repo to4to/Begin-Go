@@ -248,3 +248,81 @@ var pl=fmt.Println;
 
 //Range And Array
 
+// func main(){
+
+// // aNums:=[]int{1,2,3}
+
+// // for _, num:= range aNums{
+
+// // 	pl(num)
+// // }
+
+
+// // var arr1 [5]int;
+// // arr1[0]=1
+
+// // arr2:=[5]int{1,2,3,4,5}
+// // pl("Index 0: ",arr2[0])
+// // pl("Array Length: ",len(arr2))
+
+
+
+// //iterate without range 
+// // for i:=0;i<len(arr2);i++{
+
+// // 	pl("Index :", i, arr2[i])
+// // }
+
+
+// // //iterate with range 
+
+
+// // for i,val := range arr2{
+
+// // 	fmt.Printf("%d : %d \n",i,val)
+// // }
+
+
+// // //MultiDimensonal Array
+// // arr3:= [2][2]int{
+// // {1,2},
+// // {0,9},
+// // }
+
+// // for i:=0;i<2;i++{
+// // for j:=0;j<2;j++{
+
+// // 	pl(arr3[i][j])
+// // }
+// //}
+
+
+
+
+
+
+// //Slices 
+
+// aStr1:="abcde"
+// rArr:=[]rune(aStr1)
+
+// for _,v:= range rArr{
+
+// 	fmt.Printf("Rune Array : %d\n",v)
+// }
+
+
+// byteArr:=[]byte{'a','b','c','c'}
+// bStr:=string(byteArr[:])
+// pl("I Am a String :",bStr)
+
+
+
+// }
+
+
+
+
+
+
+//Slices
