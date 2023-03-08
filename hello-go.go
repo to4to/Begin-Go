@@ -366,4 +366,156 @@ var pl=fmt.Println;
 // pl("sl3 ",sl3)
 // pl("sArr ",sArr)
 
+// } 
+
+//Functions 
+
+// func sayHello(){
+
+// 	pl("Say Hello")
 // }
+
+// func getSum(x int,y int) int //What type is to be Returned
+// {
+
+// return x+y
+// }
+
+// func getTwo(x int) (int ,int){
+
+// 	return x+1,x+2
+// }
+
+// func getQuotient(x float64,y float64) (ans float64,err error){
+
+// if y==0{
+// 	return 0,fmt.Errorf("You can't divide by zero")
+// }else {
+
+// 	return x/y,nil
+// }
+
+
+
+// }
+
+//Varadic Functions 
+
+
+
+// func getSum(nums ...int) int{
+
+// sum:=0
+// for _,num:=range nums{
+// 	sum+=num
+// }
+// return sum
+// }
+
+
+// func getArraySum(arr []int) int{
+
+
+// sum:=0
+
+// for _,num:=range arr{
+
+// 	sum+=num
+// }
+// return sum
+// }
+
+
+// func changeValue(f3 int ) int {
+// f3+=1
+// return f3
+// }
+
+// func main(){
+// //General Syntax: func funcName(parameters) returnType{ BODY }
+
+// //sayHello()
+// // pl(getSum(4,5))
+// // pl(getTwo(5))
+// //pl(getQuotient(2,4))
+
+// // pl(getSum(1,2,3,4,5,6,7))
+// // pl(getArraySum(1,2,3,4,5,6,7))
+
+// f3:=5
+// pl("f3 Before Function :",f3)
+// changeValue(f3)
+// pl("f3 After Function ", f3)  //Value will Remain SAME
+
+// }
+
+
+
+
+//Pointers 
+
+// func changeValue2(myPtr *int) {
+// *myPtr=22
+// }
+
+
+// func main(){
+
+
+
+// f4:=10
+// pl("f4 before change value: ",f4)
+// changeValue2(&f4)
+// pl("f4 after Change Value: ",f4)
+
+
+// f5:=14
+//  var  f5Ptr *int=&f5
+// pl("Address of f5",f5Ptr)
+// pl("Value of f5", *f5Ptr)
+
+// //Assign value to ptr
+// *f5Ptr=77
+// pl("Value of f5", *f5Ptr) 
+// }
+
+
+
+//Passing Array using Pointers
+
+// func dblArrVals(arr *[4]int ){
+// for x:=0;x<4;x++{
+
+// arr[x]*=2
+// }
+// }
+
+
+// func getAverage(nums ...float64) float64{
+
+// var sum float64=0.0
+// var numSize float64=float64(len(nums))
+
+// for _,val:= range nums{
+
+// 	sum+=val
+// }
+
+// return (sum/numSize)
+// }
+
+// func main(){
+
+
+// 	pArr:=[4]int{1,2,3,4}
+
+// 	dblArrVals(&pArr)
+// 	pl(pArr)
+
+
+// 	// Slice to a Function
+// 	iSlice:=[]float64{11,12,17}
+// 	fmt.Printf("Average %.2f\n",getAverage(iSlice...) )
+// }
+
+
