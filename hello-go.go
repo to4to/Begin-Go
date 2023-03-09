@@ -697,39 +697,58 @@ var pl=fmt.Println;
 
 
 
-//Defined Types
+//Defined Types + Associate methods
 
 
 
-type Tsp float64 //tsp=tea spoon
-type Tbs float64 //tbs=table spoon
-type Ml float64 //milli litre
+// type Tsp float64 //tsp=tea spoon
+// type Tbs float64 //tbs=table spoon
+// type Ml float64 //milli litre
 
 
-func tspToMl(tsp Tsp) Ml{
+// func tspToMl(tsp Tsp) Ml{
 
-return Ml(tsp*4.92)
+// return Ml(tsp*4.92)
 
-}
+// }
 
-func tbsToMl(tbs Tbs) Ml{
+// func tbsToMl(tbs Tbs) Ml{
 
-	return Ml(tbs*14.79)
+// 	return Ml(tbs*14.79)
 	
-	}
+// 	}
 
+// 	//Associated method
+// 	func (tsp Tsp) ToMul() Ml{
 
-	func main(){
+//          return Ml(tsp*4.92)
+// 	}
+
+// 	func (tbs Tbs) ToMul() Ml{
+
+// 		return Ml(tbs*14.79)
+//    }
+           
+
+	   
+
+// 	func main(){
       
-          ml1:=Ml(Tsp(3)*4.92)
-		  fmt.Printf("3 tsps =%.2f Ml \n",ml1)
+//           ml1:=Ml(Tsp(3)*4.92)
+// 		  fmt.Printf("3 tsps =%.2f Ml \n",ml1)
 
 
 
-		  ml2:=Ml(Tbs(3)*14.79)
-		  fmt.Printf("3 tbps =%.2f Ml \n",ml2)
+// 		  ml2:=Ml(Tbs(3)*14.79)
+// 		  fmt.Printf("3 tbps =%.2f Ml \n",ml2)
 
 
-		  pl("2tsp + 4tsp =", Tsp(2),Tsp(4))
-              pl("2tsp > 4tsp =", Tsp(2)>Tsp(4))
-	}
+// 		  pl("2tsp + 4tsp =", Tsp(2),Tsp(4))
+//               pl("2tsp > 4tsp =", Tsp(2)>Tsp(4))
+
+
+// 			  //associated methods calls
+// 			  tsp1:=Tsp(3)
+//              fmt.Printf( "%.2f tsp = %.2f Ml",tsp1,tsp1.ToMul())			  
+// 	}
+
