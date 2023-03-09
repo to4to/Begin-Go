@@ -596,17 +596,89 @@ var pl=fmt.Println;
 //Structs
 
 
-type costomer struct{
+// type costomer struct{
+
+// name string
+// address string
+// balance float64
+// }
+
+
+// func getCustInfo(c costomer){
+
+// fmt.Printf("%s ows us %.2f\n", c.name,c.balance)
+
+
+// }
+
+
+// func newCustAdd(c *costomer,_address string){
+// c.address=_address
+
+
+
+
+// }
+// func main(){
+ 
+// 	var tS costomer
+
+// 	tS.name="Himanshu Kumar Singh"
+// 	tS.address=" Greater Noida Up"
+// 	tS.balance= 56.79
+    
+//      getCustInfo(tS)
+// 	 newCustAdd(&tS,"123 Street")
+// 	 pl("Address change :",tS.address)
+
+// 	 sS:=costomer{"Sally ", "!4555 Street", 0.0}
+// 	 pl("Name: ",sS.name)
+
+// }
+
+
+
+// type rectangle struct{
+// 	length ,height float64
+// }
+
+// func (r rectangle) Area() float64{
+// 	return r.height*r.length
+// } 
+
+// func main(){
+
+//  rect1:=rectangle{10.0,15.0}
+//  pl("REct Area : ",rect1.Area())
+// }
+
+
+
+
+
+//Composition   Go doesn't suppoert inheritance but it odes support composition
+
+
+type contact struct{
+
+	fName string
+	lName string
+	phone string
+}
+
+type business struct{
 
 name string
 address string
-balance string
+contact
 }
 
 
+func (b business) info(){
+fmt.Printf("Contact At %s is %s %s", b.name ,b.contact.fName , b.contact.lName)
+}
+
 func main(){
-
-
 
 
 	
