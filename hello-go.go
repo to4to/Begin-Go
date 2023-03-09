@@ -692,3 +692,44 @@ var pl=fmt.Println;
 // }
 // bus1.info()
 // }
+
+
+
+
+
+//Defined Types
+
+
+
+type Tsp float64 //tsp=tea spoon
+type Tbs float64 //tbs=table spoon
+type Ml float64 //milli litre
+
+
+func tspToMl(tsp Tsp) Ml{
+
+return Ml(tsp*4.92)
+
+}
+
+func tbsToMl(tbs Tbs) Ml{
+
+	return Ml(tbs*14.79)
+	
+	}
+
+
+	func main(){
+      
+          ml1:=Ml(Tsp(3)*4.92)
+		  fmt.Printf("3 tsps =%.2f Ml \n",ml1)
+
+
+
+		  ml2:=Ml(Tbs(3)*14.79)
+		  fmt.Printf("3 tbps =%.2f Ml \n",ml2)
+
+
+		  pl("2tsp + 4tsp =", Tsp(2),Tsp(4))
+              pl("2tsp > 4tsp =", Tsp(2)>Tsp(4))
+	}
