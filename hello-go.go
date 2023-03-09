@@ -3,6 +3,7 @@ package main
 import (
 	//"bufio"
 	"fmt"
+	
 	//"math"
 	//"math/rand"
 	//"time"
@@ -519,3 +520,94 @@ var pl=fmt.Println;
 // }
 
 
+
+
+
+//Maps
+
+// func main(){
+// //var myMap map[keyType]valueType
+
+// var heroes map[string]string
+
+// heroes=make(map[string]string)
+
+// //2nd way
+// villians :=make(map[string]string)
+
+
+// heroes["Batman"]="Bruce Wayne"
+// heroes["Superman"]="Clark Kent"
+// heroes["Flash"]="Barry Allen"
+
+
+// villians["Lex Luther"]="Lex Luther 1"
+// villians["Type 2"]="Lex Luther 2"
+// villians["Type 2"]="Lex Luther 3"
+
+// //3rd Way
+// superPets:=map[int]string{1:"Krypto",2:"Bat Hound "}
+
+// fmt.Printf("Batman Is : %v  \n",heroes["Batman"])
+
+// pl("Chip ",superPets[3])// if doesn't exists
+// _,ok:=superPets[3]
+// pl("Is there a 3rd Per", ok)
+
+// for k,v:=range heroes{
+
+
+// 	fmt.Printf("%s is %s \n", k, v)
+// }
+// delete(heroes,"Flash")
+// }
+
+
+
+
+
+
+//Generics and Constraints
+
+
+//  type MyConstraint interface{  
+
+// 	int | float64
+//  }
+// //pkg.go.dev/golang.org/x/exp/constraints //refer this link for more constraints
+
+//  func getSumGen[T MyConstraint](x T,y T) T{
+
+// return x+y
+
+//  } 
+
+//  func main(){
+//   pl("5 + 4 =",getSumGen(5,4))
+//   pl("5.6 + 4.7 =",getSumGen(5.6,4.7))
+
+
+//  }
+
+
+
+
+
+//Structs
+
+
+type costomer struct{
+
+name string
+address string
+balance string
+}
+
+
+func main(){
+
+
+
+
+	
+}
