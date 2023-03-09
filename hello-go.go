@@ -659,27 +659,36 @@ var pl=fmt.Println;
 //Composition   Go doesn't suppoert inheritance but it odes support composition
 
 
-type contact struct{
+// type contact struct{
 
-	fName string
-	lName string
-	phone string
-}
+// 	fName string
+// 	lName string
+// 	phone string
+// }
 
-type business struct{
+// type business struct{
 
-name string
-address string
-contact
-}
-
-
-func (b business) info(){
-fmt.Printf("Contact At %s is %s %s", b.name ,b.contact.fName , b.contact.lName)
-}
-
-func main(){
+// name string
+// address string
+// contact
+// }
 
 
-	
-}
+// func (b business) info(){
+// fmt.Printf("Contact At %s is %s %s", b.name ,b.contact.fName , b.contact.lName)
+// }
+
+// func main(){
+
+// con1:=contact{
+// "James","Wang",
+// "555-1222",
+// }
+
+// bus1:=business{
+// "AVC Plumbing",
+// "242 North Street",
+// con1,
+// }
+// bus1.info()
+// }
