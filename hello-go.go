@@ -759,20 +759,45 @@ var pl=fmt.Println;
 
 //Interfaces
 
-type Animal interface{
+// type Animal interface{
 
-	AngrySound()
-    HappySound()
+// 	AngrySound()
+//     HappySound()
 
-}
-
-
-type Cat string
+// }
 
 
-func (c Cat) Attack(){
+// type Cat string
 
 
+// func (c Cat) Attack(){
+ 
+// 	pl("Cat Attacks it's Prey ")
+// }
 
-	pl("Cat Attacks it's Prey ")
-}
+// func(c Cat) Name() string{
+
+// 	return string(c) //bec of type Cat string
+// }
+
+// func(c Cat) AngrySound(){
+// pl("Cat Says Hiss")
+
+// }
+
+
+// func(c Cat) HappySound(){
+// 	pl("Cat Says okkkkkkkkk")
+	
+// 	}
+
+
+// 	func main(){
+// var kitty Animal
+// 		 kitty=Cat("Kitty")
+// 		 kitty.AngrySound()
+
+// 		 var kitty2 Cat=kitty.(Cat)
+// 		 kitty2.Attack()
+//         pl("Cats Name : ",kitty2.Name())
+// 	}
