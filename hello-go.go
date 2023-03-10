@@ -752,3 +752,27 @@ var pl=fmt.Println;
 //              fmt.Printf( "%.2f tsp = %.2f Ml",tsp1,tsp1.ToMul())			  
 // 	}
 
+
+
+//Getter Setter are located in mypackage.go
+
+
+//Interfaces
+
+type Animal interface{
+
+	AngrySound()
+    HappySound()
+
+}
+
+
+type Cat string
+
+
+func (c Cat) Attack(){
+
+
+
+	pl("Cat Attacks it's Prey ")
+}
