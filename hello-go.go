@@ -3,7 +3,7 @@ package main
 import (
 	//"bufio"
 	"fmt"
-	
+	//"time"
 	//"math"
 	//"math/rand"
 	//"time"
@@ -801,3 +801,49 @@ var pl=fmt.Println;
 // 		 kitty2.Attack()
 //         pl("Cats Name : ",kitty2.Name())
 // 	}
+
+
+
+
+
+//Concurrency + GoRoutnes: multiple blocks of code sharing their execution time by pausing 
+//the execution we can run in parallel also 
+// "go" key word is used
+
+// func printTo15(){
+
+// for i:=1;i<=15;i++{
+
+// pl("Func 1: ",i)
+
+// }
+// }
+
+// func printTo10(){
+
+// 	for i:=1;i<=10;i++{
+	
+// 	pl("Func 2: ",i)
+	
+	
+// 	}
+// }
+
+// func main(){
+
+// go printTo15()
+// go printTo10()
+
+// time.Sleep(2*time.Second )
+
+// }
+
+
+
+
+//Channels: to communicate between go routines
+
+
+
+
+
