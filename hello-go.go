@@ -3,8 +3,9 @@ package main
 import (
 	//"bufio"
 	"fmt"
-	"sync"
-	//"time"
+	//"sync"
+	
+	
 	//"math"
 	//"math/rand"
 	//"time"
@@ -882,34 +883,49 @@ var pl=fmt.Println;
 
 //Mutex/lock
 
-type Account struct{
-	balance int
-	lock sync.Mutex
-}
+// type Account struct{
+// 	balance int
+// 	lock sync.Mutex
+// }
 
-func (a *Account) GetBalance() int {
+// func (a *Account) GetBalance() int {
 
-a.lock.Lock()
-defer a.lock.Unlock()
-return a.balance
-}
-
-
-func (a *Account) Withraw(v int ){
-
-a.lock.Lock()
-defer a.lock.Lock()
-
-if v> a.balance{
+// a.lock.Lock()
+// defer a.lock.Unlock()
+// return a.balance
+// }
 
 
-	pl("Not Enough Money In Account")
-}else{
+// func (a *Account) Withraw(v int ){
 
-fmt.Printf("%d Withsrawn : Balance : %d\n ",v,a.balance)
+// a.lock.Lock()
+// defer a.lock.Lock()
 
-a.balance-=v
-}
+// if v> a.balance{
 
 
-}
+// 	pl("Not Enough Money In Account")
+// }else{
+
+// fmt.Printf("%d Withsrawn : Balance : %d\n ",v,a.balance)
+
+// a.balance-=v
+// }
+
+
+// }
+
+// func main(){
+
+// var acct Account
+// acct.balance=100
+// pl("Balance :",acct.balance)
+
+// for i:=0;i<=12;i++{
+// go acct.Withraw(10)
+// }
+
+
+// time.Sleep(2*time.Second)
+
+// }
