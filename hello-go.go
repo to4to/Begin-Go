@@ -3,6 +3,7 @@ package main
 import (
 	//"bufio"
 	"fmt"
+	"sync"
 	//"time"
 	//"math"
 	//"math/rand"
@@ -880,3 +881,35 @@ var pl=fmt.Println;
 
 
 //Mutex/lock
+
+type Account struct{
+	balance int
+	lock sync.Mutex
+}
+
+func (a *Account) GetBalance() int {
+
+a.lock.Lock()
+defer a.lock.Unlock()
+return a.balance
+}
+
+
+func (a *Account) Withraw(v int ){
+
+a.lock.Lock()
+defer a.lock.Lock()
+
+if v> a.balance{
+
+
+	pl("Not Enough Money In Account")
+}else{
+
+fmt.Printf("%d Withsrawn : Balance : %d\n ",v,a.balance)
+
+a.balance-=v
+}
+
+
+}
