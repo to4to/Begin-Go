@@ -705,7 +705,7 @@ var pl = fmt.Println
 
 // }
 
-//Channels: to communicate between go routines
+//Channels: to communicate between go routines we use channels and they are typed and unbuffered by default
 
 // func nums1(channel chan int){
 
@@ -821,3 +821,18 @@ var pl = fmt.Println
 // }
 
 
+//Recursion : is a function that calls itself
+
+func factorial(x int) int {
+
+	if x == 0 {
+		return 1
+	}
+	return x * factorial(x-1)
+}
+
+func main() {
+
+	pl("Factorial of 5: ", factorial(5))
+
+}
