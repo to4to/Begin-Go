@@ -4,8 +4,6 @@ import (
 	//"bufio"
 	"fmt"
 	//"sync"
-	
-	
 	//"math"
 	//"math/rand"
 	//"time"
@@ -17,31 +15,25 @@ import (
 	//"os"
 )
 
-
-var pl=fmt.Println;
+var pl = fmt.Println
 
 //func main(){
 
-    //  //Part 1
-	// pl("What is Your Name");
-	
-	// reader :=bufio.NewReader(os.Stdin);
-	// name ,err :=reader.ReadString('\n');
+//  //Part 1
+// pl("What is Your Name");
 
-	// if err==nil{
-    //   pl("Hello ", name)
+// reader :=bufio.NewReader(os.Stdin);
+// name ,err :=reader.ReadString('\n');
 
+// if err==nil{
+//   pl("Hello ", name)
 
-	// }else
-	// {
-	// 	log.Fatal(err);
-	// }
+// }else
+// {
+// 	log.Fatal(err);
+// }
 
-
-
-
-	//Part 2 Variables
-
+//Part 2 Variables
 
 // var vName string="Himanshu"
 // var v1,v2=1.2,1.3
@@ -50,11 +42,8 @@ var pl=fmt.Println;
 
 // v4:=2.8
 
-
-
-
 //Part 3 Data Type
-// int, float64 ,bool,string,rune 
+// int, float64 ,bool,string,rune
 //Default type 0,0.0,false,""
 // pl(reflect.TypeOf(25))
 // pl(reflect.TypeOf(3.2))
@@ -62,21 +51,18 @@ var pl=fmt.Println;
 // pl(reflect.TypeOf("hello"))
 // pl(reflect.TypeOf('m'))
 
-
 //Part 3 Casting Strings
 
 // cV1:= 1.5
 // cV2:=int(cV1)
 // pl(cV2)
 
-// //String to int 
+// //String to int
 // cV3:="5000000"
 // cV4,err:=strconv.Atoi(cV3)
 // pl(cV4,err,reflect.TypeOf(cV4))
 
-
-//int To String 
-
+//int To String
 
 // cV5 :=500000
 // cV6:=strconv.Itoa(cV5)
@@ -98,8 +84,6 @@ var pl=fmt.Println;
 
 //}
 
-
-
 //Part 2
 
 // func main(){
@@ -116,9 +100,7 @@ var pl=fmt.Println;
 // 	pl("Not important")
 // }
 
-
-
-//Strings 
+//Strings
 
 // func main(){
 
@@ -145,7 +127,6 @@ var pl=fmt.Println;
 
 // }
 
-
 //Runes are called characters and rune are character code
 
 // func main(){
@@ -157,15 +138,11 @@ var pl=fmt.Println;
 
 // fmt.Printf("%d : %#U : %c \n",i,runeVal, runeVal)
 
-
 // }
 
-
 // }
-
 
 //Time in go
-
 
 // func main(){
 
@@ -175,10 +152,8 @@ var pl=fmt.Println;
 
 // }
 
-
 //Math Functions
 // func main(){
-
 
 // // seedSec:=time.Now().Unix()
 // // rand.Seed(seedSec)
@@ -197,7 +172,7 @@ var pl=fmt.Println;
 // //Get the log of e to the power of 2
 // pl("Log(7.389) " ,math.Log(math.Exp(2)))
 // pl("Max(5,4) ",math.Max(5,4))
-// pl("Min(5,4) ",math.Min(5,4)) 
+// pl("Min(5,4) ",math.Min(5,4))
 
 // //convert 90 degree into radians
 // r90:=90*math.Pi/180
@@ -206,14 +181,12 @@ var pl=fmt.Println;
 // d90:=r90*(180/math.Pi)
 // pl(d90)
 
-
 // pl("Sin90 ",math.Sin(90))
 // //Thre is also function for Cos,Tan,Acos,Asin
 // //Atan,Asinh,Acosh,Atanh,Atan2,Cosh,Sinh,Sincos
 // //Htpot
 
 // }
-
 
 // %d=Integer
 // %c=Character
@@ -226,7 +199,6 @@ var pl=fmt.Println;
 // %T= Type of supplied Value
 // func main(){
 
-
 // 	// fmt.Printf("%s %d %c %f %t %o %x \n","Stuff", 1,'A' ,3.14,true,1,1)
 // 	// fmt.Printf("%9f\n",3.14)
 // 	// fmt.Printf("%.2f\n",3.1423232)
@@ -235,19 +207,14 @@ var pl=fmt.Println;
 // 	// sp1:=fmt.Sprintf("%9.f\n",3.14434343)
 // 	// pl(sp1)
 
+// //for Loops
 
-
-// //for Loops 
-     
-//     //for initilisation;condition ;postStatement 
+//     //for initilisation;condition ;postStatement
 // 	              //{Body}
 // 				  for x:=1;x<=5;x++{
 // 					pl(x)
-// 				  }	
+// 				  }
 // }
-
-
-
 
 //Range And Array
 
@@ -260,7 +227,6 @@ var pl=fmt.Println;
 // // 	pl(num)
 // // }
 
-
 // // var arr1 [5]int;
 // // arr1[0]=1
 
@@ -268,23 +234,18 @@ var pl=fmt.Println;
 // // pl("Index 0: ",arr2[0])
 // // pl("Array Length: ",len(arr2))
 
-
-
-// //iterate without range 
+// //iterate without range
 // // for i:=0;i<len(arr2);i++{
 
 // // 	pl("Index :", i, arr2[i])
 // // }
 
-
-// // //iterate with range 
-
+// // //iterate with range
 
 // // for i,val := range arr2{
 
 // // 	fmt.Printf("%d : %d \n",i,val)
 // // }
-
 
 // // //MultiDimensonal Array
 // // arr3:= [2][2]int{
@@ -299,12 +260,7 @@ var pl=fmt.Println;
 // // }
 // //}
 
-
-
-
-
-
-// //Slices 
+// //Slices
 
 // aStr1:="abcde"
 // rArr:=[]rune(aStr1)
@@ -314,22 +270,13 @@ var pl=fmt.Println;
 // 	fmt.Printf("Rune Array : %d\n",v)
 // }
 
-
 // byteArr:=[]byte{'a','b','c','c'}
 // bStr:=string(byteArr[:])
 // pl("I Am a String :",bStr)
 
-
-
 // }
 
-
-
-
-
-
 //Slices
-
 
 // func main(){
 // //general syntax: var name []datatype
@@ -349,13 +296,10 @@ var pl=fmt.Println;
 
 // }
 
-
 // for _,v :=range sl1{
 
 // 	pl(v)
 // }
-
-
 
 // sArr:=[]int{1,2,3,4,5}
 // sl3:=sArr[0:2]
@@ -364,14 +308,13 @@ var pl=fmt.Println;
 // sArr[0]=10
 // pl("sl3 ",sl3)
 
-
 // sl3 = append(sl3, 12)
 // pl("sl3 ",sl3)
 // pl("sArr ",sArr)
 
-// } 
+// }
 
-//Functions 
+//Functions
 
 // func sayHello(){
 
@@ -398,13 +341,9 @@ var pl=fmt.Println;
 // 	return x/y,nil
 // }
 
-
-
 // }
 
-//Varadic Functions 
-
-
+//Varadic Functions
 
 // func getSum(nums ...int) int{
 
@@ -415,9 +354,7 @@ var pl=fmt.Println;
 // return sum
 // }
 
-
 // func getArraySum(arr []int) int{
-
 
 // sum:=0
 
@@ -427,7 +364,6 @@ var pl=fmt.Println;
 // }
 // return sum
 // }
-
 
 // func changeValue(f3 int ) int {
 // f3+=1
@@ -452,25 +388,18 @@ var pl=fmt.Println;
 
 // }
 
-
-
-
-//Pointers 
+//Pointers
 
 // func changeValue2(myPtr *int) {
 // *myPtr=22
 // }
 
-
 // func main(){
-
-
 
 // f4:=10
 // pl("f4 before change value: ",f4)
 // changeValue2(&f4)
 // pl("f4 after Change Value: ",f4)
-
 
 // f5:=14
 //  var  f5Ptr *int=&f5
@@ -479,10 +408,8 @@ var pl=fmt.Println;
 
 // //Assign value to ptr
 // *f5Ptr=77
-// pl("Value of f5", *f5Ptr) 
+// pl("Value of f5", *f5Ptr)
 // }
-
-
 
 //Passing Array using Pointers
 
@@ -492,7 +419,6 @@ var pl=fmt.Println;
 // arr[x]*=2
 // }
 // }
-
 
 // func getAverage(nums ...float64) float64{
 
@@ -509,21 +435,15 @@ var pl=fmt.Println;
 
 // func main(){
 
-
 // 	pArr:=[4]int{1,2,3,4}
 
 // 	dblArrVals(&pArr)
 // 	pl(pArr)
 
-
 // 	// Slice to a Function
 // 	iSlice:=[]float64{11,12,17}
 // 	fmt.Printf("Average %.2f\n",getAverage(iSlice...) )
 // }
-
-
-
-
 
 //Maps
 
@@ -537,11 +457,9 @@ var pl=fmt.Println;
 // //2nd way
 // villians :=make(map[string]string)
 
-
 // heroes["Batman"]="Bruce Wayne"
 // heroes["Superman"]="Clark Kent"
 // heroes["Flash"]="Barry Allen"
-
 
 // villians["Lex Luther"]="Lex Luther 1"
 // villians["Type 2"]="Lex Luther 2"
@@ -558,21 +476,14 @@ var pl=fmt.Println;
 
 // for k,v:=range heroes{
 
-
 // 	fmt.Printf("%s is %s \n", k, v)
 // }
 // delete(heroes,"Flash")
 // }
 
-
-
-
-
-
 //Generics and Constraints
 
-
-//  type MyConstraint interface{  
+//  type MyConstraint interface{
 
 // 	int | float64
 //  }
@@ -582,21 +493,15 @@ var pl=fmt.Println;
 
 // return x+y
 
-//  } 
+//  }
 
 //  func main(){
 //   pl("5 + 4 =",getSumGen(5,4))
 //   pl("5.6 + 4.7 =",getSumGen(5.6,4.7))
 
-
 //  }
 
-
-
-
-
 //Structs
-
 
 // type costomer struct{
 
@@ -605,30 +510,24 @@ var pl=fmt.Println;
 // balance float64
 // }
 
-
 // func getCustInfo(c costomer){
 
 // fmt.Printf("%s ows us %.2f\n", c.name,c.balance)
 
-
 // }
-
 
 // func newCustAdd(c *costomer,_address string){
 // c.address=_address
 
-
-
-
 // }
 // func main(){
- 
+
 // 	var tS costomer
 
 // 	tS.name="Himanshu Kumar Singh"
 // 	tS.address=" Greater Noida Up"
 // 	tS.balance= 56.79
-    
+
 //      getCustInfo(tS)
 // 	 newCustAdd(&tS,"123 Street")
 // 	 pl("Address change :",tS.address)
@@ -638,15 +537,13 @@ var pl=fmt.Println;
 
 // }
 
-
-
 // type rectangle struct{
 // 	length ,height float64
 // }
 
 // func (r rectangle) Area() float64{
 // 	return r.height*r.length
-// } 
+// }
 
 // func main(){
 
@@ -654,12 +551,7 @@ var pl=fmt.Println;
 //  pl("REct Area : ",rect1.Area())
 // }
 
-
-
-
-
 //Composition   Go doesn't suppoert inheritance but it odes support composition
-
 
 // type contact struct{
 
@@ -674,7 +566,6 @@ var pl=fmt.Println;
 // address string
 // contact
 // }
-
 
 // func (b business) info(){
 // fmt.Printf("Contact At %s is %s %s", b.name ,b.contact.fName , b.contact.lName)
@@ -695,18 +586,11 @@ var pl=fmt.Println;
 // bus1.info()
 // }
 
-
-
-
-
 //Defined Types + Associate methods
-
-
 
 // type Tsp float64 //tsp=tea spoon
 // type Tbs float64 //tbs=table spoon
 // type Ml float64 //milli litre
-
 
 // func tspToMl(tsp Tsp) Ml{
 
@@ -717,7 +601,7 @@ var pl=fmt.Println;
 // func tbsToMl(tbs Tbs) Ml{
 
 // 	return Ml(tbs*14.79)
-	
+
 // 	}
 
 // 	//Associated method
@@ -730,34 +614,24 @@ var pl=fmt.Println;
 
 // 		return Ml(tbs*14.79)
 //    }
-           
-
-	   
 
 // 	func main(){
-      
+
 //           ml1:=Ml(Tsp(3)*4.92)
 // 		  fmt.Printf("3 tsps =%.2f Ml \n",ml1)
-
-
 
 // 		  ml2:=Ml(Tbs(3)*14.79)
 // 		  fmt.Printf("3 tbps =%.2f Ml \n",ml2)
 
-
 // 		  pl("2tsp + 4tsp =", Tsp(2),Tsp(4))
 //               pl("2tsp > 4tsp =", Tsp(2)>Tsp(4))
 
-
 // 			  //associated methods calls
 // 			  tsp1:=Tsp(3)
-//              fmt.Printf( "%.2f tsp = %.2f Ml",tsp1,tsp1.ToMul())			  
+//              fmt.Printf( "%.2f tsp = %.2f Ml",tsp1,tsp1.ToMul())
 // 	}
 
-
-
 //Getter Setter are located in mypackage.go
-
 
 //Interfaces
 
@@ -768,12 +642,10 @@ var pl=fmt.Println;
 
 // }
 
-
 // type Cat string
 
-
 // func (c Cat) Attack(){
- 
+
 // 	pl("Cat Attacks it's Prey ")
 // }
 
@@ -787,12 +659,10 @@ var pl=fmt.Println;
 
 // }
 
-
 // func(c Cat) HappySound(){
 // 	pl("Cat Says okkkkkkkkk")
-	
-// 	}
 
+// 	}
 
 // 	func main(){
 // var kitty Animal
@@ -804,12 +674,8 @@ var pl=fmt.Println;
 //         pl("Cats Name : ",kitty2.Name())
 // 	}
 
-
-
-
-
-//Concurrency + GoRoutnes: multiple blocks of code sharing their execution time by pausing 
-//the execution we can run in parallel also 
+//Concurrency + GoRoutnes: multiple blocks of code sharing their execution time by pausing
+//the execution we can run in parallel also
 // "go" key word is used
 
 // func printTo15(){
@@ -824,10 +690,9 @@ var pl=fmt.Println;
 // func printTo10(){
 
 // 	for i:=1;i<=10;i++{
-	
+
 // 	pl("Func 2: ",i)
-	
-	
+
 // 	}
 // }
 
@@ -840,11 +705,7 @@ var pl=fmt.Println;
 
 // }
 
-
-
-
 //Channels: to communicate between go routines
-
 
 // func nums1(channel chan int){
 
@@ -853,7 +714,6 @@ var pl=fmt.Println;
 // channel <- 3
 // }
 // //chan able to send and receive value
-
 
 // func nums2(channel chan int){
 
@@ -877,10 +737,6 @@ var pl=fmt.Println;
 // pl(<-channel2)
 // }
 
-
-
-
-
 //Mutex/lock
 
 // type Account struct{
@@ -895,14 +751,12 @@ var pl=fmt.Println;
 // return a.balance
 // }
 
-
 // func (a *Account) Withraw(v int ){
 
 // a.lock.Lock()
 // defer a.lock.Lock()
 
 // if v> a.balance{
-
 
 // 	pl("Not Enough Money In Account")
 // }else{
@@ -911,7 +765,6 @@ var pl=fmt.Println;
 
 // a.balance-=v
 // }
-
 
 // }
 
@@ -925,7 +778,27 @@ var pl=fmt.Println;
 // go acct.Withraw(10)
 // }
 
-
 // time.Sleep(2*time.Second)
 
 // }
+
+//closures : are functions that can access variables outside of their scope
+//+ Passing A function
+func main() {
+
+	intSum := func(x, y int) int {
+		return x + y
+	}
+
+	pl("Sum : ", intSum(10, 20))
+
+	samp1 := 1
+	changeVar := func() {
+		samp1 += 1
+	}
+
+	changeVar()
+
+	pl("Samp1:=", samp1)
+
+}
