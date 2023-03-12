@@ -784,21 +784,40 @@ var pl = fmt.Println
 
 //closures : are functions that can access variables outside of their scope
 //+ Passing A function
-func main() {
 
-	intSum := func(x, y int) int {
-		return x + y
-	}
+// func useFunc(f func(int, int) int, x, y int) {
+//     pl("Answer: ", f(x, y))
+// }
 
-	pl("Sum : ", intSum(10, 20))
 
-	samp1 := 1
-	changeVar := func() {
-		samp1 += 1
-	}
 
-	changeVar()
+// func sumValues(x, y int) int {
 
-	pl("Samp1:=", samp1)
 
-}
+// return x + y
+
+
+// }
+
+// func main() {
+
+// 	intSum := func(x, y int) int {
+// 		return x + y
+// 	}
+
+// 	pl("Sum : ", intSum(10, 20))
+
+// 	samp1 := 1
+// 	changeVar := func() {
+// 		samp1 += 1
+// 	}
+
+// 	changeVar()
+
+// 	pl("Samp1:=", samp1)
+
+// 	useFunc(sumValues, 10, 20)
+
+// }
+
+
