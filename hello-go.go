@@ -3,6 +3,7 @@ package main
 import (
 	//"bufio"
 	"fmt"
+	//"regexp"
 	//"sync"
 	//"math"
 	//"math/rand"
@@ -823,16 +824,100 @@ var pl = fmt.Println
 
 //Recursion : is a function that calls itself
 
-func factorial(x int) int {
+// func factorial(x int) int {
 
-	if x == 0 {
-		return 1
-	}
-	return x * factorial(x-1)
-}
+// 	if x == 0 {
+// 		return 1
+// 	}
+// 	return x * factorial(x-1)
+// }
 
-func main() {
+// func main() {
 
-	pl("Factorial of 5: ", factorial(5))
+// 	pl("Factorial of 5: ", factorial(5))
 
-}
+// }
+
+
+
+//Regular Expressions : are used to match patterns in strings and are used to validate data 
+
+
+// func main() {
+// 	// Compile the expression once, usually at init time.
+// 	// Use raw strings to avoid having to quote the backslashes.
+// 	re := regexp.MustCompile("p([a-z]+)ch")
+// 	// MatchString is a convenience function that returns a boolean
+// 	// telling you whether the expression matched the input string.
+// 	fmt.Println(re.MatchString("peach"))
+// 	// FindString returns the text of the leftmost match in the input string.
+// 	// Submatch returns information about both the leftmost match and the
+// 	// captured submatches, if any.
+// 	// The argument to this function is a string containing the text to
+// 	// search.
+// 	// The return value is a slice holding the text of the leftmost match
+// 	// and the matches, if any, of its subexpressions, as defined by the
+// 	// parentheses in the regular expression.
+// 	// The result []string is empty if there is no match.
+// 	fmt.Println(re.FindString("peach punch"))
+// 	// The Submatch variants include information about both the leftmost
+// 	// match and the captured submatches, if any.
+// 	// For example this will return information for both p([a-z]+)ch and
+// 	// ([a-z]+).
+// 	fmt.Println(re.FindStringSubmatch("peach punch"))
+// 	// Similarly this will return information about the indexes of matches
+// 	// and submatches.
+// 	fmt.Println(re.FindStringIndex("peach punch"))
+// 	// The All variants of these functions apply to all matches in the
+// 	// input, not just the first.
+// 	// For example to find all matches for a regexp.
+// 	fmt.Println(re.FindAllString("peach punch pinch", -1))
+// 	// These All variants are available for the other functions we saw
+// 	// above as well.
+// 	fmt.Println(re.FindAllStringSubmatchIndex(
+// 		"peach punch pinch", -1))
+// 	// Providing a non-negative integer as the second argument to these
+// 	// functions will limit the number of matches.
+// 	fmt.Println(re.FindAllString("peach punch pinch", 2))
+// 	// Our examples above had string arguments and used names like
+// 	// MatchString. We can also provide []byte arguments and drop String
+// 	// from the function name.
+// 	fmt.Println(re.Match([]byte("peach")))
+// 	// When creating constants with regular expressions you can use the
+// 	// MustCompile variation of Compile. A plain Compile won't work for	
+// }
+
+
+
+// func main(){
+
+// 	reStr := "The ape was at the apex"
+// 	match, _ := regexp.MatchString("(ape[^ ]?)", reStr)
+// 	pl(match)
+
+// 	// You can compile them
+// 	// Find multiple words ending with at
+// 	reStr2 := "Cat rat mat fat pat"
+// 	r, _ := regexp.Compile("([crmfp]at)")
+
+// 	// Did you find any matches?
+// 	pl("MatchString :", r.MatchString(reStr2))
+
+// 	// Return first match
+// 	pl("FindString :", r.FindString(reStr2))
+
+// 	// Starting and ending index for 1st match
+// 	pl("Index :", r.FindStringIndex(reStr2))
+
+// 	// Return all matches
+// 	pl("All String :", r.FindAllString(reStr2, -1))
+
+// 	// Get 1st 2 matches
+// 	pl("All String :", r.FindAllString(reStr2, 2))
+
+// 	// Get indexes for all matches
+// 	pl("All Submatch Index :", r.FindAllStringSubmatchIndex(reStr2, -1))
+
+// 	// Replace all matches with Dog
+// 	pl(r.ReplaceAllString(reStr2, "Dog"))
+// }
